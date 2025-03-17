@@ -1,0 +1,185 @@
+header {
+    background-image: url(../img/galerie1/header.jpg);
+    background-size: cover;
+    padding-bottom: 55px;
+    background-attachment: fixed;
+}
+
+menu {
+    background: rgba(72, 52, 42, 0.7);
+    display: flex;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    
+
+}
+
+header nav ul {
+    display: flex;
+    column-gap: 5px;
+}
+
+header nav ul li {
+    display: flex;
+
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+header nav ul li a:hover {
+    background: rgb(255, 255, 255, 0.2);
+}
+
+header .nadpis {
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+
+header .nadpis {
+    text-shadow: 4px 5px 3px black;
+}
+
+header .nadpis h2 {
+    font-size: 100px;
+    font-family: "Kaushan Script";
+    border-bottom: 1px solid white;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+header .nadpis h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+header .nadpis .social {
+    margin-top: 15px;
+}
+
+header .nadpis .social a {
+    color: white;
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+header .nadpis .social a:hover i.fa-facebook {
+    color: #1877F2;
+}
+
+header .nadpis .social a:hover i.fa-instagram {
+    color: #E4405F;
+}
+
+header .nadpis .social a:hover i.fa-youtube {
+    color: #CD201F;
+}
+
+/*mobile navigation*/
+
+header .container .mobile-nav-icon {
+    margin-top: 7px;
+    display: none;
+}
+
+.hamburger-hide {
+    display:none;
+  }
+
+@media (max-width: 750px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav {
+        justify-content: center;
+        position: absolute;
+        top:110px;
+        
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        display: block;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        padding: 10px 15px;
+    }
+
+    header a.logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .nadpis {
+        margin-top: 30px;
+        
+    }
+
+    header .nadpis h2 {
+        font-size: 2em;
+    }
+
+    header .nadpis h3 {
+        font-size: 0.7em;
+    }
+
+    header .nadpis .social a {
+        font-size: 1em;
+        margin: 0 0.2em;
+    }
+    
+    header .container .mobile-nav-back {
+        font-size: 0.5em;
+        display: block;
+        height: 350px;
+        position: fixed;
+        z-index: 200;
+        width: 100%;
+    }
+    
+    header .container .mobile-nav-icon {
+        display: inline-block;
+        z-index: 400;
+        position: absolute;
+        top: -110px;
+        left: 5px;
+        
+        cursor: pointer; 
+        right: 2%;
+        
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    nav ul.hamburger-show {
+        display: block; 
+    }
+}
+ 
+
+
